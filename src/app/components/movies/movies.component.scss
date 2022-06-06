@@ -1,0 +1,11 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card {
+  width: 300px;
+  overflow-x: hidden;
+}

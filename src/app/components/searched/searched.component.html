@@ -1,0 +1,11 @@
+<div class="container" >
+    <div class="card-wrapper" >
+        <div class="card" *ngFor="let data of movies">
+            <img [src]="data.i.imageUrl" alt="Avatar" class="image" style="width: 300px; height: 400px;">
+            <div class="middle">
+                <div class="text-dark"><strong>{{data.l}}</strong> </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,24 @@
+
+<h2>Movies</h2>
+<div class="container">
+    <div class="d-flex mb-2" role="search" >
+        <input class="form-control me-2" type="search" placeholder="Search" #search aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit" (click)="searchMovie(search.value)" >Search</button>
+    </div>
+</div>
+<marquee behavior="" direction="">Come Enjoy Our Demo Site For Movies</marquee>
+<div class="check" *ngIf="movies">
+    <app-searched [movies]="movies"></app-searched>
+</div>
+
+<div class="container" >
+    <div class="card-wrapper" >
+        <div class="card" *ngFor="let data of data">
+            <img [src]="data.i.imageUrl" alt="Avatar" class="image" style="width: 300px; height: 400px;">
+            <div class="middle">
+                <div class="text-dark"><strong>{{data.l}}</strong> </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
